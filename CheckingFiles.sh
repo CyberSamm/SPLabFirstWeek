@@ -1,6 +1,4 @@
 #/bin/bash
-# Prompt the user for a name of a file or directory 
-# and report if it is a regular file, a directory.
 
 if [ -z $1 ]; then
 	echo "No parameters found."

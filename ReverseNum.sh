@@ -1,5 +1,4 @@
 #!/bin/bash
-# Print a number in reverse order
 
 reverse() {
 	result=0

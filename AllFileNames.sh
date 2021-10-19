@@ -1,5 +1,4 @@
 #!/bin/bash
-# Print all file names on given folder with subfolders
 
 traverse() {
 	for file in $1/*; do

@@ -1,5 +1,4 @@
 #!/bin/bash
-# Count lines in file given argument
 
 if [ -z $1 ]; then
 	echo "No parameters found."
