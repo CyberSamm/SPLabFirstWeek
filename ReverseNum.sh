@@ -13,6 +13,13 @@ reverse() {
 	echo $(( $result ))
 }
 
+reverseForNeg() {
+	n=$1
+	n=$(( $n * -1 ))
+	echo $(( $(  reverse $n ) * -1 ))
+
+}
+
 if [ -z $1 ]; then
 	echo "No Parameters found."
 	exit
@@ -23,9 +30,13 @@ if [ $# -gt 1 ]; then
 	exit	
 fi
 
-re='^[0-9]+$'
-if [[ $1 =~ $re ]]; then
-	echo "The number in reverse order: $( reverse $1 )"
+pattern='[+-]?[0-9]+'
+if [[ $1 =~ $pattern ]]; then
+	if (( $1 < 0 )); then
+		echo "The number in reverse order: $( reverseForNeg $1 )"
+	else
+		echo "The number in reverse order: $( reverse $1 )"
+	fi
 else
 	echo "Not a number."
 fi
