@@ -7,6 +7,13 @@ Linux scripting and source control.
 3. Script **CountLinesInFile.sh** counts lines in file given in argument.
 4. Script **ReverseNum.sh** prints a number in reverse order.
 
-## Explanation of the cmake:
-The cmake file builds and links two files. 
+## CMake:
+The CMake directory contains *the cmake file, two .cpp files with header file and build.sh clean.sh scripts.* **CMake file** builds and links .cpp files. **build.sh** script make *build* directory, call cmake, make and run the resulting executable file. **clean.sh** script deletes files created during building.
   
+## TEST:
+The TEST directory contains *scripts and some other files for testing AllFileNames.sh CheckingFiles.sh CountLinesInFile.sh ReverseNum.sh scripts*. 
+1. **firstTest.sh** is for testing *AllFileNames.sh* script.
+2. **secondTest.sh** is for testing *CheckingFiles.sh* script.
+3. **thirdtest.sh** is for testing *ReverseNum.sh* script.
+4. **fourthtest.sh** is for testing *CountLinesInFile.sh* script.
+
