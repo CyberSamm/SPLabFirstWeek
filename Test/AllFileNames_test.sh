@@ -5,7 +5,7 @@ if [ "${TEST1}" = "No file with the such name." ]; then
 	echo "The first test passed successfully!"
 else
 	echo "Failed the first test."
-	exit
+	$( exit 1 )
 fi
 	
 TEST2=$(../AllFileNames.sh)
@@ -13,7 +13,7 @@ if [ "${TEST2}" = "No Parameters found." ]; then
 	echo "The second test passed successfully!"
 else
 	echo "Failed the second test."
-	exit
+	$( exit 1 )
 fi
 
 TEST3=$(../AllFileNames.sh Root)
@@ -32,5 +32,5 @@ if [ "${TEST3}" = "${expOutput}" ]; then
 	echo "The third test passed successfully!"
 else
 	echo "Failed the third test."
-	exit
+	$( exit 1 )
 fi
