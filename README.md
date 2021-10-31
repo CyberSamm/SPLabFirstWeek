@@ -12,8 +12,3 @@ The CMake directory contains *the cmake file, two .cpp files with header file an
   
 ## TEST:
 The TEST directory contains *scripts and some other files for testing AllFileNames.sh CheckingFiles.sh CountLinesInFile.sh ReverseNum.sh scripts*. 
-1. **firstTest.sh** is for testing *AllFileNames.sh* script.
-2. **secondTest.sh** is for testing *CheckingFiles.sh* script.
-3. **thirdtest.sh** is for testing *ReverseNum.sh* script.
-4. **fourthtest.sh** is for testing *CountLinesInFile.sh* script.
-
