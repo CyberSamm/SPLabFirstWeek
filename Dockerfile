@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
-RUN mkdir -p /scripts/TEST/
-WORKDIR /scripts/TEST/
+RUN mkdir -p /scripts/Test/
+WORKDIR /scripts/Test/
 
 COPY *.sh /scripts/
-COPY Test/ /scripts/TEST/
+COPY Test/ /scripts/Test/
 
 CMD ./runAllTests.sh

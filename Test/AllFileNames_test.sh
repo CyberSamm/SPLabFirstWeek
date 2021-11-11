@@ -1,5 +1,28 @@
 #!/bin/bash
 
+findPath() {
+	file="Test"
+	res=$( find -name $file )
+	path="Test"
+	dir="../"
+
+	if [ ! -z $res ]; then
+		echo $res
+		exit
+	fi
+
+	while [ -z $res ]; do
+		path="../"$path
+		res=$( find $dir -name $file )
+		dir="../"$dir
+	done
+	echo $path
+}
+
+
+curPos=$(pwd)
+cd $(findPath)
+
 TEST1=$(../AllFileNames.sh unknown_file)
 if [ "${TEST1}" = "No file with the such name." ]; then
 	echo "The first test passed successfully!"
@@ -34,3 +57,5 @@ else
 	echo "Failed the third test."
 	$( exit 1 )
 fi
+
+cd $curPos
