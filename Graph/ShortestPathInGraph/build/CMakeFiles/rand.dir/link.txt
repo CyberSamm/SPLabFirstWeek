@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/rand.dir/src/randVertices.cpp.o  -o rand 

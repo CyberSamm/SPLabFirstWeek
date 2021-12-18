@@ -1,6 +1,0 @@
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/edit_cache.dir
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/rand.dir
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/matrix.dir
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/cycle.dir
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/rebuild_cache.dir
-/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/build/CMakeFiles/dijkstra.dir
