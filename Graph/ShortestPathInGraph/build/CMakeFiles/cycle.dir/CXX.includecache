@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samvel/edu/SPLab/SPLabFirstWeek/Graph/ShortestPathInGraph/src/cycle.cpp
+iostream
+-
+fstream
+-
+algorithm
+-
+string
+-
+
