@@ -93,7 +93,7 @@ int main() {
                 dist = std::to_string(std::abs(v[index].first - v[index].second));
             }
             std::string num_of_paths = std::to_string(paths.size());
-            std::getline(fin, data); // line: Paths
+            std::getline(fin, data); 
             while (!fin.eof()) {
                 std::getline(fin, data);
                 if (data == "end") {

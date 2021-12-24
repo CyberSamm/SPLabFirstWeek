@@ -318,40 +318,7 @@ int main() {
                 }
             }
 
-            // FIND PATHS
-            /*
-            std::vector<std::vector<int>> vv;
-            find_paths(rows, columns, vv);
-            std::vector<std::string> paths;
-            int row_s = (v[index].first - 1) % 100;
-            int row_d = (v[index].second - 1) % 100;
-            int column_s = (v[index].first / 100) % 100;
-            int column_d = (v[index].second / 100) % 100;
-
-            if (row_s < row_d) {
-                if (column_s < column_d) {
-                    make_path(v[index].first, v[index].second, 1, 1, paths, vv);
-                }
-                else {
-                    make_path(v[index].first, v[index].second, 1, -1, paths, vv);
-                }
-            }
-            else {
-                if (column_s < column_d) {
-                    make_path(v[index].first, v[index].second, -1, 1, paths, vv);
-                }
-                else {
-                    make_path(v[index].first, v[index].second, -1, -1, paths, vv);
-                }
-            }
-            for (auto elem : paths) {
-                std::cout << elem << "\n";
-            }
-            //std::string num_of_paths = std::to_string(paths.size());
-            */
-            // ----------
-
-            std::getline(fin, data); // line: Paths
+            std::getline(fin, data);
             while (!fin.eof()) {
                 std::getline(fin, data);
                 if (data == "end") {
@@ -369,7 +336,6 @@ int main() {
             }
 
             path_from_dij.clear();
-            //paths.clear();
             ++index;
         }
     }
