@@ -1,5 +1,28 @@
 #!/bin/bash
 
+findPath() {
+	file="Test"
+	res=$( find -name $file )
+	path="Test"
+	dir="../"
+
+	if [ ! -z $res ]; then
+		echo $res
+		exit
+	fi
+
+	while [ -z $res ]; do
+		path="../"$path
+		res=$( find $dir -name $file )
+		dir="../"$dir
+	done
+	echo $path
+}
+
+
+curPos=$(pwd)
+cd $(findPath)
+
 echo "Running AllFileNames_test.sh..."
 ./AllFileNames_test.sh 
 if [ $? -ne 0 ]; then
@@ -35,3 +58,5 @@ if [ $? -ne 0 ]; then
 else
         echo "success!"
 fi
+
+cd $curPos
